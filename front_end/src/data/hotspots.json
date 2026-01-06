@@ -1,0 +1,14 @@
+[
+  {
+    "hotspot_id": "hs1",
+    "center_latitude": 11.0182,
+    "center_longitude": 76.9575,
+    "intensity": 12
+  },
+  {
+    "hotspot_id": "hs2",
+    "center_latitude": 11.0251,
+    "center_longitude": 76.9628,
+    "intensity": 7
+  }
+]

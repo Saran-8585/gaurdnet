@@ -1,0 +1,18 @@
+[
+  {
+    "report_id": "1",
+    "crime_type": "Theft",
+    "latitude": 11.0168,
+    "longitude": 76.9558,
+    "reported_at": "2025-01-02T22:30:00",
+    "priority": "high"
+  },
+  {
+    "report_id": "2",
+    "crime_type": "Assault",
+    "latitude": 11.0215,
+    "longitude": 76.9602,
+    "reported_at": "2025-01-03T20:10:00",
+    "priority": "medium"
+  }
+]
