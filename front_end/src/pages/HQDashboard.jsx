@@ -1,17 +1,27 @@
-import MapView from "../components/MapView";
-import HotspotHeatmap from "../components/HotspotHeatmap";
+import ToggleCrimeMap from "../components/ToggleCrimeMap";
+import ToggleHotspotMap from "../components/ToggleHotspotMap";
 
-const HQDashboard = () => {
+
+const HQDashboard = ({ reports, notifications }) => {
+  const hqAlerts = notifications.filter(n => n.type === "HQ");
+
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>HQ Crime Monitoring Dashboard</h2>
+    <>
+      <h2>HQ Command Dashboard</h2>
 
-      <h3>Live Crime Reports (Geotagged)</h3>
-      <MapView />
+      <h3>📢 Live Notifications</h3>
+      {hqAlerts.map((n, i) => (
+        <div key={i} className="alert">{n.message}</div>
+      ))}
 
-      <h3>Predicted Crime Hotspots (AI)</h3>
-      <HotspotHeatmap />
-    </div>
+      {/* ✅ CITY-WIDE CRIME VIEW */}
+      <ToggleCrimeMap reports={reports} />
+
+      <h3>📊 Crime Analysis</h3>
+<ToggleHotspotMap />
+
+
+    </>
   );
 };
 

@@ -1,0 +1,5 @@
+[
+  { "id": "U1", "name": "Citizen User", "role": "citizen", "email": "citizen@test.com", "password": "1234" },
+  { "id": "U2", "name": "Patrol Officer", "role": "patrol", "email": "patrol@test.com", "password": "1234" },
+  { "id": "U3", "name": "HQ Admin", "role": "hq", "email": "hq@test.com", "password": "1234" }
+]
